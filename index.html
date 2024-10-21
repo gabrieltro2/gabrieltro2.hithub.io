@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberCafé</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al CyberCafe Zona de Hackers</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#pricing">Promociones</a></li>
+                <li><a href="#reservations">Reservaciones</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Tu lugar de tecnología y diversión</h1>
+    </section>
+    <section class="services" id="services">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades.</p>
+        <ul>
+            <li class="card">Computadoras gamers</li>
+            <li class="card">Computadoras de oficina</li>
+            <li class="card">Diversas opciones de cafeteria</li>
+            <li class="card">Zona de consolas</li>
+            <li class="card">Impresion y fotocopiado</li>
+        </ul>
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Promociones</h2>
+        <p>Consulta nuestras promociones:</p>
+        <ul>
+            <li class="card"><strong>Paquete de Tiempo:</strong> Compra 5 horas y recibe 1 hora adicional gratis.</li>
+            <li class="card"><strong>Día de Gamers:</strong> Torneos de videojuegos los viernes con premios.</li>
+            <li class="card"><strong>Promoción Estudiantil:</strong> Descuento del 15% para estudiantes con credencial.</li>
+            <li class="card"><strong>Hora Gratis por Consumo:</strong> Obtén 30 minutos gratis con la compra de un snack.</li>
+            <li class="card"><strong>Plan de Fidelidad:</strong> Acumula 10 horas de uso y recibe 1 hora gratis.</li>
+            <li class="card"><strong>Fin de Semana Especial:</strong> 3 horas por el precio de 2 los sábados y domingos.</li>
+            <li class="card"><strong>Descuento por Referidos:</strong> Trae a un amigo y ambos obtienen un 10% de descuento.</li>
+        </ul>
+    </section>    
+    <section class="reservations" id="reservations">
+        <h2><center>Reserva tu Equipo</center></h2>
+        <p ><center>Selecciona el tipo de equipo y el horario que deseas reservar:</center></p>
+        <div class="reservation-form client-form">
+            <form id="reservationForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" required>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" required>
+                <label for="equipment">Tipo de equipo:</label>
+                <select id="equipment" required>
+                    <option value="">Selecciona un equipo</option>
+                    <option value="Computadora Gamer">Computadora Gamer</option>
+                    <option value="Computadora de Oficina">Computadora de Oficina</option>
+                    <option value="Consola de Videojuegos">Consola de Videojuegos</option>
+                </select>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+        <h3><center>Reservas Realizadas</center></h3>
+        <table id="reservationTable" border="1" style="margin: 20px auto; max-width: 800px; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Equipo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+    <section class="gallery" id="gallery">
+        <h2>Galería</h2>
+        <p>Mira lo que ofrecemos:</p>
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+        <img src="imagen4.jpg" alt="Imagen 4">
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonios</h2>
+        <div id="testimonial-list" class="testimonial-list">
+            <div class="testimonial-item">
+                <span class="testimonial-name">Nahuel luján</span>
+                <span class="testimonial-text">¡Me encanta este lugar!</span>
+            </div>
+            <div class="testimonial-item">
+                <span class="testimonial-name">Joaquin Pucheta</span>
+                <span class="testimonial-text">Excelente servicio y muy buenos precios.</span>
+            </div>
+            <div class="testimonial-item">
+                <span class="testimonial-name">Martín Batallini</span>
+                <span class="testimonial-text">Hermoso lugar, muy  recomendado.</span>
+            </div>
+        </div>
+        <h3>Déjanos tu testimonio</h3>
+        <form id="testimonial-form" class="testimonial-form">
+            <input type="text" id="name-input" placeholder="Tu nombre" required>
+            <br>
+            <textarea id="testimonial-input" rows="4" placeholder="Escribe tu testimonio aquí..." required></textarea>
+            <br>
+            <button type="submit">Enviar Testimonio</button>
+        </form>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Información de Contacto</h2>
+        <p>Encuentra nuestros datos de contacto a continuación:</p>
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> Av. Libertador 1234, Buenos Aires, Argentina</p>
+            <p><strong>Teléfono:</strong> +54 (11) 5164-2611</p>
+            <p><strong>Correo Electrónico:</strong> ciberzonadehackers@gmail.com</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes de 9:00 AM a 6:00 PM</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 CyberCafé. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Cargar reservaciones almacenadas al cargar la página
+            const savedReservations = JSON.parse(localStorage.getItem('reservations')) || [];
+            const table = document.getElementById('reservationTable').getElementsByTagName('tbody')[0];
+
+            savedReservations.forEach(reservation => {
+                const newRow = table.insertRow();
+                newRow.insertCell(0).textContent = reservation.name;
+                newRow.insertCell(1).textContent = reservation.date;
+                newRow.insertCell(2).textContent = reservation.time;
+                newRow.insertCell(3).textContent = reservation.equipment;
+            });
+
+            document.getElementById('reservationForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const date = document.getElementById('date').value;
+                const time = document.getElementById('time').value;
+                const equipment = document.getElementById('equipment').value;
+
+                const newReservation = { name, date, time, equipment };
+                
+                // Guardar en localStorage
+                savedReservations.push(newReservation);
+                localStorage.setItem('reservations', JSON.stringify(savedReservations));
+
+                // Mostrar en la tabla
+                const newRow = table.insertRow();
+                newRow.insertCell(0).textContent = name;
+                newRow.insertCell(1).textContent = date;
+                newRow.insertCell(2).textContent = time;
+                newRow.insertCell(3).textContent = equipment;
+
+                document.getElementById('reservationForm').reset();
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Cargar testimonios almacenados al cargar la página
+            const savedTestimonials = JSON.parse(localStorage.getItem('testimonials')) || [];
+            const testimonialList = document.getElementById('testimonial-list');
+
+            savedTestimonials.forEach(testimonial => {
+                const testimonialItem = document.createElement('div');
+                testimonialItem.className = 'testimonial-item';
+
+                const nameParagraph = document.createElement('span');
+                nameParagraph.className = 'testimonial-name';
+                nameParagraph.textContent = testimonial.name;
+
+                const testimonialParagraph = document.createElement('span');
+                testimonialParagraph.className = 'testimonial-text';
+                testimonialParagraph.textContent = testimonial.text;
+
+                testimonialItem.appendChild(nameParagraph);
+                testimonialItem.appendChild(testimonialParagraph);
+                testimonialList.appendChild(testimonialItem);
+            });
+
+            document.getElementById('testimonial-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const nameInput = document.getElementById('name-input').value;
+                const testimonialInput = document.getElementById('testimonial-input').value;
+
+                const newTestimonial = { name: nameInput, text: testimonialInput };
+                
+                // Guardar en localStorage
+                savedTestimonials.push(newTestimonial);
+                localStorage.setItem('testimonials', JSON.stringify(savedTestimonials));
+
+                // Agregar a la lista en pantalla
+                const testimonialItem = document.createElement('div');
+                testimonialItem.className = 'testimonial-item';
+
+                const nameParagraph = document.createElement('span');
+                nameParagraph.className = 'testimonial-name';
+                nameParagraph.textContent = nameInput;
+
+                const testimonialParagraph = document.createElement('span');
+                testimonialParagraph.className = 'testimonial-text';
+                testimonialParagraph.textContent = testimonialInput;
+
+                testimonialItem.appendChild(nameParagraph);
+                testimonialItem.appendChild(testimonialParagraph);
+                testimonialList.appendChild(testimonialItem);
+
+                document.getElementById('testimonial-form').reset();
+            });
+        });
+    </script>
+</body>
+</html>

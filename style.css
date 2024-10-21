@@ -1,0 +1,256 @@
+body {/*Selecciona el elemento body y permite aplicar estilos a todo el cuerpo de la página.*/
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;/*Establece todos los márgenes de un elemento en cero.*/
+            padding: 0;/*Elimina el espacio interior de un elemento.*/
+            background-color: #52222283;/*Establece el color de fondo del cuerpo de la página a un gris muy claro.*/
+        }
+        header {/*selecciona el elemento header y permite aplicar estilos específicos a la cabecera de la página web.*/
+            background-color: #333;/*Establece el color de fondo del encabezado.*/
+            color: white;/*Establece el color del texto dentro del encabezado*/
+            padding: 10px 0;/*Agrega un espacio de relleno alrededor del contenido del encabezado.*/
+            text-align: center;/*Alinea el contenido del encabezado al centro horizontalmente.*/
+        }
+        nav ul {/*selecciona cualquier lista desordenada ul y permite aplicar estilos específicos a las listas que se usan para la navegación de la pagina web*/
+            list-style: none;/*Quita las viñetas de la lista dentro de la navegacion.*/
+            padding: 0;/*Quita el espacio interior de la lista dentro de la navegacion.*/
+        }
+        nav ul li {/*Selecciona todos los elementos de lista li y permite aplicar estilos específicos a cada elemento individual del menú de navegación de la pagina web.*/
+            display: inline;/*Coloca los elementos de la lista uno al lado del otro*/
+            margin: 0 15px;/*Añade un espacio de 15px a los lados de cada elemento.*/
+        }
+        nav ul li a {/*selecciona todos los enlaces a dentro de li y ul y permite aplicar estilos específicos a los enlaces del menú de navegación.*/
+            color: white;/*Establece el color del texto de los enlaces a blanco.*/
+            text-decoration: none;/*Quita el subrayado de los enlaces*/
+        }
+        .hero {/*Permite aplicar estilos específicos a la sección hero de la página web*/
+            background-image: url('fondo-cyber.jpg');/*Establece una imagen de fondo para la sección*/
+            background-size: cover;/*Ajusta la imagen de fondo para que cubra toda la sección, manteniendo su proporción.*/
+            height: 400px;/*Define la altura de la sección*/
+            color: white;/*Establece el color del texto dentro de la sección*/
+            text-align: center;/*Alinea el texto al centro horizontalmente.*/
+            display: flex;/*Habilita Flexbox para un mejor control del diseño y la alineación del contenido dentro de la sección.*/
+            justify-content: center;/*Centra el contenido horizontalmente dentro de la sección.*/
+            align-items: center;/*Centra el contenido verticalmente dentro de la sección.*/
+            flex-direction: column;/*Organiza los elementos dentro de la sección en una columna vertical.*/
+        }
+        .hero h1 {/*Selecciona todos los elementos h1 y permite aplicar estilos específicos al título principal dentro de la sección hero*/
+            font-size: 3em;/*Hace el título más grande*/
+            margin: 0;/*Quita el espacio alrededor del título.*/
+        }
+        .services ul {
+            list-style-type: none;
+          }
+        .pricing ul {
+            list-style-type:none;
+        }
+        .testimonials {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-list {
+            margin-bottom: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .testimonial-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .testimonial-item:hover {
+            background-color: #f1f1f1;
+        }
+        .testimonial-name {
+            font-weight: bold;
+            margin-right: 10px;
+            flex-basis: 20%; /* Toma un 20% del espacio disponible */
+        }
+        .testimonial-text {
+            flex-basis: 75%; /* Toma un 75% del espacio disponible */
+        }
+        .testimonial-form input,
+        .testimonial-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .testimonial-form button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .testimonial-form button:hover {
+            background-color: #e68a00;
+        }
+        .services, .pricing, .gallery, .contact {/*Permite aplicar los mismos estilos a todas esas secciones de la página web.*/
+            padding: 50px;/*Establece tamaño del espacio interno del contenido */
+            text-align: center;/*Centra el contenido horizontalmente*/
+        }
+        .services h2, .pricing h2, .gallery h2, .contact h2 /*selecciona todos los títulos h2 y permite aplicar los mismos estilos a los títulos de esas cinco secciones.*/{
+            margin-bottom: 20px;/*Agrega un margen inferior*/
+        }
+        .services p, .pricing p, .gallery p, .contact p /*Selecciona todos los párrafos p y permite aplicar los mismos estilos a los párrafos de esas cinco secciones.*/{
+            margin-bottom: 20px;/*Espacio de 20px debajo de cada párrafo*/
+        }
+        .services ul, .pricing ul {
+            list-style-type: none; /* Quita las viñetas */
+            padding: 0; /* Quita el espacio interior */
+            text-align: center; /* Centra el texto en las listas */
+        }
+        .services ul li, .pricing ul li {
+            margin: 10px 0; /* Añade un margen vertical entre los elementos de la lista */
+        }
+        .gallery img {/*Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery.*/
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+        footer {/*Selecciona el elemento footer y permite aplicar estilos específicos al pie de página.*/
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .client-form {/*Selecciona todos los elementos de la clase client-form y permite aplicar estilos específicos a ese formulario*/
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 40px; /* Ajustado para más espacio */
+            border-radius: 8px; /* Esquinas redondeadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+            margin: 20px auto; /* Centrando el formulario en la página */
+            max-width: 600px; /* Ancho máximo del formulario */
+        }
+        .client-form form {/*Selecciona todos los elementos form que están dentro de un elemento con la clase client-form y permite aplicar estilos específicos al formulario en sí, no al contenedor que lo rodea..*/
+            display: inline-block;/*permite poner elementos en línea pero controlar su ancho y alto como si fueran bloques.*/
+            text-align: left;
+            width: 100%; /* Ancho completo del formulario */
+        }
+        .client-form label, .client-form input, .client-form textarea {/*Aplica los mismos estilos a las etiquetas, campos de entrada y áreas de texto dentro del formulario client-form.*/
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .client-form button {/* Estilos para el botón de enviar */
+            background-color: #ff9900;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .client-form button:hover {/* Efecto hover para el botón de enviar */
+            background-color: #e68a00;
+        }
+        .contact {
+            background-color: #f4f4f4; /* Color de fondo suave para la sección */
+            padding: 50px; /* Espacio interno amplio para la sección */
+            text-align: center; /* Centrar el texto */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para un toque más moderno */
+            margin: 20px auto; /* Centrado de la sección */
+            max-width: 800px; /* Ancho máximo de la sección */
+        }
+        .contact-info p {
+            font-size: 1.1em; /* Un poco más grande que el texto normal */
+            color: #333; /* Color del texto ligeramente más oscuro */
+            margin-bottom: 10px; /* Espacio entre las líneas */
+        }
+        .contact-info strong {
+            color: #ff9900; /* Color de los títulos en naranja para que coincida con otros elementos de la web */
+        } 
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block; /* Para que las tarjetas estén una al lado de la otra */
+            width: calc(30% - 40px); /* Ancho dinámico basado en el contenedor */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s; /* Efecto de transformación suave */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Aumenta ligeramente la tarjeta al pasar el cursor */
+        }           
+        .gallery {/* Estilo para la sección de galería */
+            padding: 50px; /* Espaciado interno */
+            text-align: center; /* Centra el contenido */
+        }
+        .gallery-images { /* Nuevo contenedor para las imágenes */
+            display: flex; /* Utiliza flexbox para alinear las imágenes */
+            flex-wrap: wrap; /* Permite que las imágenes se ajusten a múltiples líneas */
+            justify-content: center; /* Centra las imágenes horizontalmente */
+        }
+        .gallery img {/* Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery. */
+            width: 200px; /* Ajusta el ancho de las imágenes */
+            height: 150px; /* Ajusta la altura de las imágenes */
+            margin: 10px; /* Añade margen alrededor de las imágenes */
+            border-radius: 8px; /* Esquinas redondeadas para las imágenes */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para las imágenes */
+            transition: transform 0.2s; /* Efecto de transformación suave */
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Aumenta ligeramente la imagen al pasar el cursor */
+        }
+        .reservation-section {
+            background-color: #f4f4f4; /* Color de fondo suave */
+            padding: 50px; /* Espaciado interno */
+            text-align: center; /* Centrar el texto */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+            margin: 20px auto; /* Centrar la sección */
+            max-width: 800px; /* Ancho máximo */
+        }
+        .reservation-section h2 {
+            margin-bottom: 20px; /* Espacio debajo del título */
+            color: #333; /* Color de texto principal */
+        }
+        .reservation-form {
+            display: flex;
+            flex-direction: column; /* Alinear los elementos verticalmente */
+            align-items: center; /* Centrar el contenido */
+        }
+        .reservation-form label, .reservation-form input, .reservation-form select, .reservation-form textarea {
+            display: block;
+            width: 100%;
+            max-width: 600px; /* Ancho máximo de los elementos */
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .reservation-form button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .reservation-form button:hover {
+            background-color: #e68a00;
+        }
