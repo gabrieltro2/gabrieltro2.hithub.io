@@ -23,7 +23,7 @@ body {/*Selecciona el elemento body y permite aplicar estilos a todo el cuerpo d
             text-decoration: none;/*Quita el subrayado de los enlaces*/
         }
         .hero {/*Permite aplicar estilos específicos a la sección hero de la página web*/
-            background-image: url('fondo-cyber.jpg');/*Establece una imagen de fondo para la sección*/
+            background-image: url('fondo.cyber.jpg');/*Establece una imagen de fondo para la sección*/
             background-size: cover;/*Ajusta la imagen de fondo para que cubra toda la sección, manteniendo su proporción.*/
             height: 400px;/*Define la altura de la sección*/
             color: white;/*Establece el color del texto dentro de la sección*/
