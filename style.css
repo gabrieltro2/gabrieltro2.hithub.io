@@ -1,43 +1,54 @@
-body { /*Selecciona el elemento body y permite aplicar estilos a todo el cuerpo de la página.*/
+body {/*Selecciona el elemento body y permite aplicar estilos a todo el cuerpo de la página.*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; /*Establece todos los márgenes de un elemento en cero.*/
-    padding: 0; /*Elimina el espacio interior de un elemento.*/
-    background-color: #52222283; /*Establece el color de fondo del cuerpo de la página a un gris muy claro.*/
+    margin: 0;/*Establece todos los márgenes de un elemento en cero.*/
+    padding: 0;/*Elimina el espacio interior de un elemento.*/
+    background-color: #52222283;/*Establece el color de fondo del cuerpo de la página a un gris muy claro.*/
 }
-header { /*selecciona el elemento header y permite aplicar estilos específicos a la cabecera de la página web.*/
-    background-color: #333; /*Establece el color de fondo del encabezado.*/
-    color: white; /*Establece el color del texto dentro del encabezado*/
-    padding: 10px 0; /*Agrega un espacio de relleno alrededor del contenido del encabezado.*/
-    text-align: center; /*Alinea el contenido del encabezado al centro horizontalmente.*/
+header {/*selecciona el elemento header y permite aplicar estilos específicos a la cabecera de la página web.*/
+    background-color: #333;/*Establece el color de fondo del encabezado.*/
+    color: white;/*Establece el color del texto dentro del encabezado*/
+    padding: 10px 0;/*Agrega un espacio de relleno alrededor del contenido del encabezado.*/
+    text-align: center;/*Alinea el contenido del encabezado al centro horizontalmente.*/
 }
-nav ul { /*selecciona cualquier lista desordenada ul y permite aplicar estilos específicos a las listas que se usan para la navegación de la pagina web*/
-    list-style: none; /*Quita las viñetas de la lista dentro de la navegacion.*/
-    padding: 0; /*Quita el espacio interior de la lista dentro de la navegacion.*/
+nav ul {/*selecciona cualquier lista desordenada ul y permite aplicar estilos específicos a las listas que se usan para la navegación de la pagina web*/
+    list-style: none;/*Quita las viñetas de la lista dentro de la navegacion.*/
+    padding: 0;/*Quita el espacio interior de la lista dentro de la navegacion.*/
 }
-nav ul li { /*Selecciona todos los elementos de lista li y permite aplicar estilos específicos a cada elemento individual del menú de navegación de la pagina web.*/
-    display: inline; /*Coloca los elementos de la lista uno al lado del otro*/
-    margin: 0 15px; /*Añade un espacio de 15px a los lados de cada elemento.*/
+nav ul li {/*Selecciona todos los elementos de lista li y permite aplicar estilos específicos a cada elemento individual del menú de navegación de la pagina web.*/
+    display: inline;/*Coloca los elementos de la lista uno al lado del otro*/
+    margin: 0 15px;/*Añade un espacio de 15px a los lados de cada elemento.*/
 }
-nav ul li a { /*selecciona todos los enlaces a dentro de li y ul y permite aplicar estilos específicos a los enlaces del menú de navegación.*/
-    color: white; /*Establece el color del texto de los enlaces a blanco.*/
-    text-decoration: none; /*Quita el subrayado de los enlaces*/
+nav ul li a {/*selecciona todos los enlaces a dentro de li y ul y permite aplicar estilos específicos a los enlaces del menú de navegación.*/
+    color: white;/*Establece el color del texto de los enlaces a blanco.*/
+    text-decoration: none;/*Quita el subrayado de los enlaces*/
 }
-.hero { /*Permite aplicar estilos específicos a la sección hero de la página web*/
-    background-image: url('fondo.ciber.jpg'); /*Establece una imagen de fondo para la sección*/
-    background-size: cover; /*Ajusta la imagen de fondo para que cubra toda la sección, manteniendo su proporción.*/
-    background-position: center; /* Centra la imagen */
-    min-height: 400px; /* Altura mínima */
-    color: white; /*Establece el color del texto dentro de la sección*/
-    text-align: center; /*Alinea el texto al centro horizontalmente.*/
-    display: flex; /*Habilita Flexbox para un mejor control del diseño y la alineación del contenido dentro de la sección.*/
-    justify-content: center; /*Centra el contenido horizontalmente dentro de la sección.*/
-    align-items: center; /*Centra el contenido verticalmente dentro de la sección.*/
-    flex-direction: column; /*Organiza los elementos dentro de la sección en una columna vertical.*/
-    padding: 20px; /* Espaciado adicional */
+.hero {/*Permite aplicar estilos específicos a la sección hero de la página web*/
+    background-image: url('fondo.ciber.jpg');/*Establece una imagen de fondo para la sección*/
+    background-size: cover; /* O usa contain si es necesario */
+    background-position: center; /* Asegúrate de que la imagen esté centrada */
+    min-height: 300px; /* Reduce la altura mínima */
+    color: white;/*Establece el color del texto dentro de la sección*/
+    text-align: center;/*Alinea el texto al centro horizontalmente.*/
+    display: flex;/*Habilita Flexbox para un mejor control del diseño y la alineación del contenido dentro de la sección.*/
+    justify-content: center;/*Centra el contenido horizontalmente dentro de la sección.*/
+    align-items: center;/*Centra el contenido verticalmente dentro de la sección.*/
+    flex-direction: column;/*Organiza los elementos dentro de la sección en una columna vertical.*/
+    padding: 10px; /* Reduce el padding */
 }
-.hero h1 { /*Selecciona todos los elementos h1 y permite aplicar estilos específicos al título principal dentro de la sección hero*/
-    font-size: 3em; /*Hace el título más grande*/
-    margin: 0; /*Quita el espacio alrededor del título.*/
+.hero h1 {/*Selecciona todos los elementos h1 y permite aplicar estilos específicos al título principal dentro de la sección hero*/
+    font-size: 2.5em;/*Reduce el tamaño del título*/
+    margin: 0;/*Quita el espacio alrededor del título.*/
+}
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 200px; /* Ajusta aún más la altura en móviles */
+        padding: 20px; /* Aumenta ligeramente el padding en móviles */
+    }
+
+    .hero h1 {
+        font-size: 1.8em; /* Reduce aún más el tamaño del texto en móviles */
+    }
 }
 .services ul {
     list-style-type: none;
@@ -103,15 +114,15 @@ nav ul li a { /*selecciona todos los enlaces a dentro de li y ul y permite aplic
 .testimonial-form button:hover {
     background-color: #e68a00;
 }
-.services, .pricing, .gallery, .contact { /*Permite aplicar los mismos estilos a todas esas secciones de la página web.*/
-    padding: 50px; /*Establece tamaño del espacio interno del contenido */
-    text-align: center; /*Centra el contenido horizontalmente*/
+.services, .pricing, .gallery, .contact {/*Permite aplicar los mismos estilos a todas esas secciones de la página web.*/
+    padding: 50px;/*Establece tamaño del espacio interno del contenido */
+    text-align: center;/*Centra el contenido horizontalmente*/
 }
-.services h2, .pricing h2, .gallery h2, .contact h2 { /*selecciona todos los títulos h2 y permite aplicar los mismos estilos a los títulos de esas cinco secciones.*/
-    margin-bottom: 20px; /*Agrega un margen inferior*/
+.services h2, .pricing h2, .gallery h2, .contact h2 /*selecciona todos los títulos h2 y permite aplicar los mismos estilos a los títulos de esas cinco secciones.*/{
+    margin-bottom: 20px;/*Agrega un margen inferior*/
 }
-.services p, .pricing p, .gallery p, .contact p { /*Selecciona todos los párrafos p y permite aplicar los mismos estilos a los párrafos de esas cinco secciones.*/
-    margin-bottom: 20px; /*Espacio de 20px debajo de cada párrafo*/
+.services p, .pricing p, .gallery p, .contact p /*Selecciona todos los párrafos p y permite aplicar los mismos estilos a los párrafos de esas cinco secciones.*/{
+    margin-bottom: 20px;/*Espacio de 20px debajo de cada párrafo*/
 }
 .services ul, .pricing ul {
     list-style-type: none; /* Quita las viñetas */
@@ -121,18 +132,18 @@ nav ul li a { /*selecciona todos los enlaces a dentro de li y ul y permite aplic
 .services ul li, .pricing ul li {
     margin: 10px 0; /* Añade un margen vertical entre los elementos de la lista */
 }
-.gallery img { /*Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery.*/
+.gallery img {/*Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery.*/
     width: 200px;
     height: 150px;
     margin: 10px;
 }
-footer { /*Selecciona el elemento footer y permite aplicar estilos específicos al pie de página.*/
+footer {/*Selecciona el elemento footer y permite aplicar estilos específicos al pie de página.*/
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
-.client-form { /*Selecciona todos los elementos de la clase client-form y permite aplicar estilos específicos a ese formulario*/
+.client-form {/*Selecciona todos los elementos de la clase client-form y permite aplicar estilos específicos a ese formulario*/
     text-align: center;
     background-color: #f4f4f4;
     padding: 40px; /* Ajustado para más espacio */
@@ -141,17 +152,17 @@ footer { /*Selecciona el elemento footer y permite aplicar estilos específicos 
     margin: 20px auto; /* Centrando el formulario en la página */
     max-width: 600px; /* Ancho máximo del formulario */
 }
-.client-form form { /*Selecciona todos los elementos form que están dentro de un elemento con la clase client-form y permite aplicar estilos específicos al formulario en sí, no al contenedor que lo rodea.*/
-    display: inline-block; /*permite poner elementos en línea pero controlar su ancho y alto como si fueran bloques.*/
+.client-form form {/*Selecciona todos los elementos form que están dentro de un elemento con la clase client-form y permite aplicar estilos específicos al formulario en sí, no al contenedor que lo rodea..*/
+    display: inline-block;/*permite poner elementos en línea pero controlar su ancho y alto como si fueran bloques.*/
     text-align: left;
     width: 100%; /* Ancho completo del formulario */
 }
-.client-form label, .client-form input, .client-form textarea { /*Aplica los mismos estilos a las etiquetas, campos de entrada y áreas de texto dentro del formulario client-form.*/
+.client-form label, .client-form input, .client-form textarea {/*Aplica los mismos estilos a las etiquetas, campos de entrada y áreas de texto dentro del formulario client-form.*/
     display: block;
     margin-bottom: 10px;
     width: 100%;
 }
-.client-form button { /* Estilos para el botón de enviar */
+.client-form button {/* Estilos para el botón de enviar */
     background-color: #ff9900;
     color: white;
     padding: 10px;
@@ -161,7 +172,7 @@ footer { /*Selecciona el elemento footer y permite aplicar estilos específicos 
     font-size: 16px;
     transition: background-color 0.3s;
 }
-.client-form button:hover { /* Efecto hover para el botón de enviar */
+.client-form button:hover {/* Efecto hover para el botón de enviar */
     background-color: #e68a00;
 }
 .contact {
@@ -195,7 +206,7 @@ footer { /*Selecciona el elemento footer y permite aplicar estilos específicos 
 .card:hover {
     transform: scale(1.05); /* Aumenta ligeramente la tarjeta al pasar el cursor */
 }           
-.gallery { /* Estilo para la sección de galería */
+.gallery {/* Estilo para la sección de galería */
     padding: 50px; /* Espaciado interno */
     text-align: center; /* Centra el contenido */
 }
@@ -204,7 +215,7 @@ footer { /*Selecciona el elemento footer y permite aplicar estilos específicos 
     flex-wrap: wrap; /* Permite que las imágenes se ajusten a múltiples líneas */
     justify-content: center; /* Centra las imágenes horizontalmente */
 }
-.gallery img { /* Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery. */
+.gallery img {/* Selecciona todas las imágenes permite aplicar estilos específicos a las imágenes dentro de la sección gallery. */
     width: 200px; /* Ajusta el ancho de las imágenes */
     height: 150px; /* Ajusta la altura de las imágenes */
     margin: 10px; /* Añade margen alrededor de las imágenes */
@@ -256,20 +267,10 @@ footer { /*Selecciona el elemento footer y permite aplicar estilos específicos 
 .reservation-form button:hover {
     background-color: #e68a00;
 }
-
 /* Media Queries para mejorar la responsividad */
 @media (max-width: 768px) {
     .services, .pricing, .gallery, .contact, .reservation-section {
         padding: 20px; /* Menos espacio en móviles */
-    }
-
-    .hero {
-        min-height: 300px; /* Altura menor en dispositivos móviles */
-        padding: 10px; /* Menos padding en móviles */
-    }
-
-    .hero h1 {
-        font-size: 2em; /* Reduce el tamaño del título en móviles */
     }
 
     .services ul li, .pricing ul li {
