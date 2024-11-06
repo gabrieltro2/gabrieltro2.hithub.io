@@ -256,7 +256,7 @@
         }
         
         /* Media Queries para mejorar la responsividad */
-        @media (max-width: 768px) {
+        @media (max-width: 968px) {
             .services, .pricing, .gallery, .contact, .reservation-section {
                 padding: 20px; /* Menos espacio en móviles */
             }
