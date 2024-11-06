@@ -256,13 +256,8 @@
         }
         
         /* Media Queries para mejorar la responsividad */
-        @media (max-width: 768px) {
-            .services, .pricing, .gallery, .contact, .reservation-section {
-                padding: 20px; /* Menos espacio en móviles */
-            }
-        
+        @media (max-width: 768px) 
             .services ul li, .pricing ul li {
-                margin: 10px 0; /* Espacio entre elementos */
                 width: 100%; /* Asegura que ocupen todo el ancho */
             }
         
@@ -272,7 +267,7 @@
             }
         
             .card {
-                width: calc(100% - 20px); /* Las tarjetas ocupan el ancho completo en móviles */
+                width: calc(100%); /* Las tarjetas ocupan el ancho completo en móviles */
                 margin: 10px 0; /* Espacio vertical */
             }
         
