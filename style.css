@@ -3,7 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #52222283;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
     overflow-x: hidden; /* Elimina el desbordamiento horizontal */
+}
+
+* {
+    box-sizing: inherit; /* Hereda el box-sizing de body para evitar desbordes no deseados */
 }
 
 header {
@@ -16,6 +21,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -49,10 +55,6 @@ nav ul li a {
 
 /* Media Queries para móviles */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal */
-    }
-
     .hero {
         min-height: 200px;
         padding: 20px;
@@ -62,48 +64,60 @@ nav ul li a {
         font-size: 1.8em;
     }
 
-    /* Ajustar el ancho de las imágenes y los elementos en las secciones */
+    /* Ajustar las secciones a pantalla pequeña */
+    .services, .pricing, .gallery, .contact, .reservation-section {
+        padding: 20px; /* Reducir el padding en móviles */
+        max-width: 100%; /* Asegura que los contenedores no excedan el ancho disponible */
+        box-sizing: border-box; /* Evitar desbordes por padding */
+    }
+
+    .services ul li, .pricing ul li {
+        width: 100%; /* Los elementos de lista ocupan todo el ancho */
+        margin: 10px 0;
+    }
+
     .gallery img {
-        width: 100%; /* Las imágenes se ajustan al 100% del contenedor */
+        width: 100%; /* Las imágenes ocupan el 100% de ancho del contenedor */
         height: auto;
     }
 
     .card {
-        width: calc(100% - 20px); /* Las tarjetas ocupan el 100% de ancho disponible */
+        width: 100%; /* Las tarjetas ocupan el 100% del contenedor */
         margin: 10px 0;
-    }
-
-    .services, .pricing, .gallery, .contact, .reservation-section {
-        padding: 20px; /* Reducir el padding en móviles */
-    }
-
-    .services ul li, .pricing ul li {
-        width: 100%; /* Asegura que los elementos de lista ocupen todo el ancho */
-        margin: 10px 0;
+        box-sizing: border-box; /* Asegura que el padding y borde no afecten el tamaño */
     }
 
     .testimonial-item {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: flex-start; /* Alinear los elementos al inicio */
     }
 
     .testimonial-name, .testimonial-text {
-        flex-basis: auto;
+        flex-basis: auto; /* Restablecer flex-basis */
     }
 
     .client-form {
-        max-width: 100%; /* Asegura que el formulario ocupe el 100% del ancho disponible */
+        max-width: 100%; /* El formulario ocupa todo el ancho disponible */
         padding: 20px;
+        box-sizing: border-box;
     }
 
-    .card {
-        width: 100%; /* Las tarjetas ocupan el ancho completo en pantallas pequeñas */
+    .contact-info p {
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .contact-info strong {
+        color: #ff9900;
     }
 }
 
-.services, .pricing, .gallery, .contact {
+.services, .pricing, .gallery, .contact, .reservation-section {
     padding: 50px;
     text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .services h2, .pricing h2, .gallery h2, .contact h2 {
@@ -122,12 +136,6 @@ nav ul li a {
 
 .services ul li, .pricing ul li {
     margin: 10px 0;
-}
-
-.gallery img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
 }
 
 footer {
@@ -201,7 +209,7 @@ footer {
     padding: 20px;
     margin: 10px;
     display: inline-block;
-    width: calc(30% - 40px);
+    width: calc(30% - 40px); /* Para las pantallas más grandes */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
