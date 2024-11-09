@@ -7,6 +7,7 @@
 
 body {/*Selecciona el elemento body y permite aplicar estilos a todo el cuerpo de la página.*/
     font-family: 'Poppins-SemiBold', sans-serif;
+    font-size: 18px; /* Ajusta el valor según sea necesario */
     margin: 0;/*Establece todos los márgenes de un elemento en cero.*/
     padding: 0;/*Elimina el espacio interior de un elemento.*/
     background-color: #52222283;/*Establece el color de fondo del cuerpo de la página a un gris muy claro.*/
