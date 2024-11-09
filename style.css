@@ -66,6 +66,9 @@ nav ul li a {/*selecciona todos los enlaces a dentro de li y ul y permite aplica
     border-radius: 5px;
     padding: 10px;
 }
+.promotions-section {
+    margin-top: 0px; /* Reduce el margen superior */
+}
 .testimonial-item {
     display: flex;
     justify-content: space-between;
