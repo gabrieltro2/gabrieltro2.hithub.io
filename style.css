@@ -115,6 +115,9 @@ nav ul li a {/*selecciona todos los enlaces a dentro de li y ul y permite aplica
 .services h2, .pricing h2, .gallery h2, .contact h2 /*selecciona todos los títulos h2 y permite aplicar los mismos estilos a los títulos de esas cinco secciones. */ {
     margin-bottom: 20px;/*Agrega un margen inferior */
 }
+.services-section {
+    margin-bottom: 0px; /* Reduce el margen inferior */
+}
 .services p, .pricing p, .gallery p, .contact p /*Selecciona todos los párrafos p y permite aplicar los mismos estilos a los párrafos de esas cinco secciones. */ {
     margin-bottom: 20px;/*Espacio de 20px debajo de cada párrafo */
 }
