@@ -36,17 +36,18 @@
         nav ul li a {/*selecciona todos los enlaces a dentro de li y ul y permite aplicar estilos específicos a los enlaces del menú de navegación. */
             color: white;/*Establece el color del texto de los enlaces a blanco. */
             text-decoration: none;/*Quita el subrayado de los enlaces */
-        }
-        .hero {/*Permite aplicar estilos específicos a la sección hero de la página web */
-            background-image: url('fondo.ciber.jpg');/*Establece una imagen de fondo para la sección */
-            background-size: cover;/*Ajusta la imagen de fondo para que cubra toda la sección, manteniendo su proporción. */
-            height: 400px;/*Define la altura de la sección */
-            color: white;/*Establece el color del texto dentro de la sección */
-            text-align: center;/*Alinea el texto al centro horizontalmente. */
-            display: flex;/*Habilita Flexbox para un mejor control del diseño y la alineación del contenido dentro de la sección. */
-            justify-content: center;/*Centra el contenido horizontalmente dentro de la sección. */
-            align-items: center;/*Centra el contenido verticalmente dentro de la sección. */
-            flex-direction: column;/*Organiza los elementos dentro de la sección en una columna vertical. */
+        .hero {/*Permite aplicar estilos específicos a la sección hero de la página web*/
+            background-image: url('fondo.ciber.jpg');/*Establece una imagen de fondo para la sección*/
+            background-size: cover; /* O usa contain si es necesario */
+            background-position: center; /* Asegúrate de que la imagen esté centrada */
+            min-height: 300px; /* Reduce la altura mínima */
+            color: white;/*Establece el color del texto dentro de la sección*/
+            text-align: center;/*Alinea el texto al centro horizontalmente.*/
+            display: flex;/*Habilita Flexbox para un mejor control del diseño y la alineación del contenido dentro de la sección.*/
+            justify-content: center;/*Centra el contenido horizontalmente dentro de la sección.*/
+            align-items: center;/*Centra el contenido verticalmente dentro de la sección.*/
+            flex-direction: column;/*Organiza los elementos dentro de la sección en una columna vertical.*/
+            padding: 10px; /* Reduce el padding */
         }
         .hero h1 {/*Selecciona todos los elementos h1 y permite aplicar estilos específicos al título principal dentro de la sección hero */
             font-size: 3em;/*Hace el título más grande */
